@@ -4,12 +4,16 @@
   "version": "1.0.1",
   "author": "yao <2767321434@qq.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2767321434/vue-mini-alert.git"
+  },
   "private": false,
   "main": "dist/vue-mini-alert.min.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "vuebuild": "vue-cli-service build"
+    "demobuild": "cross-env NODE_ENV=development webpack --progress --hide-modules"
   },
   "dependencies": {},
   "browserslist": [

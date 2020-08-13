@@ -16,7 +16,10 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <button type="button" @click="showAlert" >点击测试&#9989;</button>
+    <button type="button" @click="showAlert('info')" >info alert</button>
+    <button type="button" @click="showAlert('error')" >error alert</button>
+      <button type="button" @click="showAlert('success')" >success alert</button>
+       <button type="button" @click="showAlert('warning')" >warning alert</button>
   </div>
 </template>
 
@@ -29,9 +32,9 @@ export default {
     }
   },
   methods: {
-    showAlert(){
+    showAlert(type){
       
-      this.$minialert("测试",'success',2000);
+      this.$minialert("我是一条消息",type,5000);
     }
   },
 }

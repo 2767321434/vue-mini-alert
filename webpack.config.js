@@ -4,7 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");  //记得先in
 const NODE_ENV = process.env.NODE_ENV
 var entryStr='./src/main.js'
 var outFileName='build.js';
-var outPublicPath ="dist";
+var outPublicPath ="./dist/";
 console.log(process.env.NODE_ENV )
 if (process.env.NODE_ENV === 'production') {
   entryStr='./src/lib/index.js';
